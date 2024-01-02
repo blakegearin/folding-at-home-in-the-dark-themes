@@ -3,6 +3,7 @@
 :root
 {
   --main-background-color: #1B2431;
+  --main-border-color: black;
   --main-color: #a6b4c3;
 
   --secondary-background-color: #151515;
@@ -13,11 +14,21 @@
   --accent-color: #7f0024;
 }
 
+.form-control::-webkit-calendar-picker-indicator
+{
+  filter: invert(100%);
+}
+
 html,
 body
 {
   background-color: var(--main-background-color) !important;
   color: var(--main-color);
+}
+
+.content
+{
+  color: var(--secondary-color);
 }
 
 .navbar-custom,
@@ -44,24 +55,18 @@ body
 .form-control
 {
   background-color: var(--tertiary-background-color);
+  color: var(--secondary-color);
+}
+
+.form-control:focus
+{
+  background-color: var(--accent-color);
   color: var(--main-color);
-}
-
-.form-control:focus
-{
-  background-color: var(--accent-color);
-  color: var(--secondary-color);
-}
-
-.form-control:focus
-{
-  background-color: var(--accent-color);
-  color: var(--secondary-color);
 }
 
 #power-tools a
 {
-  color: #eff1f6 !important;
+  color: var(--main-color) !important;
 }
 
 .user-holder,
@@ -101,7 +106,7 @@ h6 a
 {
   background-color: var(--accent-color) !important;
   border: none;
-  color: var(--secondary-color);
+  color: var(--main-color);
 }
 
 .input-group-text
@@ -148,7 +153,7 @@ div.description-project,
 
 .timeline-item .text-info
 {
-  color: var(--secondary-color) !important;
+  color: var(--main-color) !important;
 }
 
 .timeline-item .bg-info-lighten
@@ -167,7 +172,7 @@ div.description-project,
 .nav-pills .show > .nav-link
 {
   background-color: var(--accent-color) !important;
-  color: var(--secondary-color) !important;
+  color: var(--main-color) !important;
 }
 
 .nav-pills .nav-link
@@ -184,7 +189,7 @@ div.description-project,
 .input-group-text,
 .power-tools
 {
-  color: var(--secondary-color) !important;
+  color: var(--main-color) !important;
 }
 
 hr
@@ -229,7 +234,7 @@ input[data-switch=info]:checked + label {
 .input-group select
 {
   background-color: var(--tertiary-background-color);
-  color: var(--main-color);
+  color: var(--secondary-color);
 }
 
 .user-holder .card div,
@@ -261,25 +266,30 @@ div.pu-type.description
   background-position: 50% 50%;
   background-color: #f6a828 !important;
 
-  border-right: 2px solid black;
+  border-right: 2px solid var(--secondary-color);
 }
 
 .jq-icon-success
 {
   background-color: var(--tertiary-background-color);
-  color: var(--main-color);
-  border-color: var(--tertiary-background-color);
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
 }
 
 .slot-status-tbl td
 {
-  border-color: var(--main-color) !important;
+  border-color: var(--secondary-color) !important;
+}
+
+.slot-status-tbl td:last-child
+{
+  border-right: 2px solid var(--secondary-color) !important;
 }
 
 .slot-status-tbl th,
 td
 {
-  border-color: var(--main-color);
+  border-color: var(--secondary-color);
 }
 
 canvas
@@ -287,11 +297,11 @@ canvas
   background-color: var(--tertiary-background-color);
 }
 
-/* Borders */
+/* Borders & Box Shadows */
 
 .dropdown-menu
 {
-  border: 3px solid #000000;
+  border: 3px solid var(--main-border-color);
   border-radius: 0.6em !important;
 
   box-shadow: 0px 4px 8px rgba(0, 0, 0, .6);
@@ -316,13 +326,13 @@ canvas
 
 #center-console-screen-nav
 {
-  border: 3px solid #000000;
+  border: 3px solid var(--main-border-color);
   border-radius: 0.6em !important;
 }
 
 #center-console-screen-nav li:not(:first-child)
 {
-  border-left: 3px solid black;
+  border-left: 3px solid var(--main-border-color);
 }
 
 #center-console-screen-nav li a
@@ -363,7 +373,7 @@ canvas
 
 .primary-top-console-row > .row
 {
-  border: 3px solid #000000;
+  border: 3px solid var(--main-border-color);
   border-radius: 0.6em;
 
   box-shadow: 0px 4px 8px rgba(0, 0, 0, .6);
@@ -386,7 +396,7 @@ canvas
 
 .console-screen-col
 {
-  border: 3px solid #000000;
+  border: 3px solid var(--main-border-color);
   border-top: none;
   border-bottom: none;
 
@@ -403,7 +413,7 @@ canvas
 
 #folding-performance-and-controls .row
 {
-  border: 3px solid #000000;
+  border: 3px solid var(--main-border-color);
   border-bottom: none;
   border-radius: 0.6em;
   border-bottom-left-radius: 0;
@@ -414,7 +424,7 @@ canvas
 
 #folding-slot-controls .row
 {
-  border: 3px solid #000000;
+  border: 3px solid var(--main-border-color);
   border-top: none;
   border-bottom: none;
 
@@ -423,7 +433,7 @@ canvas
 
 #slots .row
 {
-  border: 3px solid #000000;
+  border: 3px solid var(--main-border-color);
   border-top: none;
   border-radius: 0.6em;
   border-top-left-radius: 0;

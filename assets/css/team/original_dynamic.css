@@ -3,8 +3,8 @@
 :root
 {
   --main-background-color: #5875a0;
-  --main-border-color: black;
   --main-color: white;
+  --main-border-color: black;
 
   --secondary-background-color: #eff1f6;
   --secondary-color: black;
@@ -12,6 +12,27 @@
   --tertiary-background-color: white;
 
   --accent-color: #8e0028;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root
+  {
+    --main-background-color: #1B2431;
+    --main-color: #a6b4c3;
+    --main-border-color: black;
+
+    --secondary-background-color: #151515;
+    --secondary-color: #c4c4c4;
+
+    --tertiary-background-color: black;
+
+    --accent-color: #7f0024;
+  }
+
+  .form-control::-webkit-calendar-picker-indicator
+  {
+    filter: invert(100%);
+  }
 }
 
 html,
@@ -296,7 +317,7 @@ canvas
 
 .dropdown-menu
 {
-  border: 3px solid var(--main-border-color);
+  border: 3px solid #000000;
   border-radius: 0.6em !important;
 
   box-shadow: 0px 4px 8px rgba(0, 0, 0, .6);
@@ -368,7 +389,7 @@ canvas
 
 .primary-top-console-row > .row
 {
-  border: 3px solid var(--main-border-color);
+  border: 3px solid #000000;
   border-radius: 0.6em;
 
   box-shadow: 0px 4px 8px rgba(0, 0, 0, .6);
@@ -391,7 +412,7 @@ canvas
 
 .console-screen-col
 {
-  border: 3px solid var(--main-border-color);
+  border: 3px solid #000000;
   border-top: none;
   border-bottom: none;
 
@@ -408,7 +429,7 @@ canvas
 
 #folding-performance-and-controls .row
 {
-  border: 3px solid var(--main-border-color);
+  border: 3px solid #000000;
   border-bottom: none;
   border-radius: 0.6em;
   border-bottom-left-radius: 0;
@@ -419,7 +440,7 @@ canvas
 
 #folding-slot-controls .row
 {
-  border: 3px solid var(--main-border-color);
+  border: 3px solid #000000;
   border-top: none;
   border-bottom: none;
 
@@ -428,7 +449,7 @@ canvas
 
 #slots .row
 {
-  border: 3px solid var(--main-border-color);
+  border: 3px solid #000000;
   border-top: none;
   border-radius: 0.6em;
   border-top-left-radius: 0;
