@@ -189,7 +189,7 @@ div.description-project,
 
 hr
 {
-  border-color: var(--secondary-color);
+  border-color: var(--main-color);
 }
 
 .btn-outline-success,
