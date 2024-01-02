@@ -4,6 +4,7 @@
 {
   --main-background-color: #5875a0;
   --main-border-color: black;
+  --main-box-shadow: rgba(0, 0, 0, .6);
   --main-color: white;
 
   --secondary-background-color: #eff1f6;
@@ -12,6 +13,9 @@
   --tertiary-background-color: white;
 
   --accent-color: #8e0028;
+  --accent-secondary-color: #303031;
+
+  --user-score-color: #fb6436;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,6 +23,7 @@
   {
     --main-background-color: #1B2431;
     --main-border-color: black;
+    --main-box-shadow: rgba(0, 0, 0, .6);
     --main-color: #a6b4c3;
 
     --secondary-background-color: #151515;
@@ -27,6 +32,9 @@
     --tertiary-background-color: black;
 
     --accent-color: #7f0024;
+    --accent-secondary-color: #303031;
+
+    --user-score-color: #fb6436;
   }
 
   .form-control::-webkit-calendar-picker-indicator
@@ -114,7 +122,7 @@ h6 a
 
 #user-score
 {
-  color: #fb6436 !important;
+  color: var(--user-score-color) !important;
   font-weight: 700;
 }
 
@@ -229,22 +237,22 @@ input[data-switch=info]:checked + label {
 .btn-outline-success:hover
 {
   background-color: #42d29d !important;
-  color: #303031 !important;
-  border-color: #303031 !important;
+  color: var(--accent-secondary-color) !important;
+  border-color: var(--accent-secondary-color) !important;
 }
 
 .btn-outline-warning:hover
 {
   background-color: #f9bc0d !important;
-  color: #303031 !important;
-  border-color: #303031 !important;
+  color: var(--accent-secondary-color) !important;
+  border-color: var(--accent-secondary-color) !important;
 }
 
 .btn-outline-danger:hover
 {
   background-color: #fa6767 !important;
-  color: #303031 !important;
-  border-color: #303031 !important;
+  color: var(--accent-secondary-color) !important;
+  border-color: var(--accent-secondary-color) !important;
 }
 
 .input-group select
@@ -320,7 +328,7 @@ canvas
   border: 3px solid var(--main-border-color);
   border-radius: 0.6em !important;
 
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, .6);
+  box-shadow: 0px 4px 8px var(--main-box-shadow);
 }
 
 .card
@@ -392,7 +400,7 @@ canvas
   border: 3px solid var(--main-border-color);
   border-radius: 0.6em;
 
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, .6);
+  box-shadow: 0px 4px 8px var(--main-box-shadow);
 
   margin-bottom: 15px;
 }
@@ -435,7 +443,7 @@ canvas
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, .6);
+  box-shadow: 0px 4px 8px var(--main-box-shadow);
 }
 
 #folding-slot-controls .row
@@ -444,7 +452,7 @@ canvas
   border-top: none;
   border-bottom: none;
 
-  box-shadow: 0px 8px 8px rgba(0, 0, 0, .6);
+  box-shadow: 0px 8px 8px var(--main-box-shadow);
 }
 
 #slots .row
@@ -455,5 +463,5 @@ canvas
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, .6);
+  box-shadow: 0px 4px 8px var(--main-box-shadow);
 }
