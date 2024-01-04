@@ -13,7 +13,10 @@
   --tertiary-background-color: white;
 
   --accent-color: #8e0028;
-  --accent-secondary-color: #303031;
+
+  --success-color: #42d29d;
+
+  --button-highlight-color: #303031;
 
   --user-score-color: #fb6436;
 }
@@ -32,7 +35,7 @@
     --tertiary-background-color: black;
 
     --accent-color: #7f0024;
-    --accent-secondary-color: #303031;
+    --button-highlight-color: #303031;
 
     --user-score-color: #fb6436;
   }
@@ -47,12 +50,16 @@ html,
 body
 {
   background-color: var(--main-background-color) !important;
-  color: var(--main-color);
+}
+
+footer
+{
+  color: var(--footer-color) !important;
 }
 
 .content
 {
-  color: var(--secondary-color);
+  color: var(--row-color);
 }
 
 .navbar-custom,
@@ -67,7 +74,11 @@ body
   box-shadow: none !important;
 }
 
-.nav-link,
+.nav-link
+{
+  color: var(--navbar-color) !important;
+}
+
 #power-tools div
 {
   color: var(--main-color) !important;
@@ -75,14 +86,14 @@ body
 
 .dropdown-menu
 {
-  background-color: var(--secondary-background-color);
+  background-color: var(--row-background-color);
   color: var(--main-color);
 }
 
 .form-control
 {
-  background-color: var(--tertiary-background-color);
-  color: var(--secondary-color);
+  background-color: var(--card-color);
+  color: var(--row-color);
 }
 
 .form-control:focus
@@ -103,12 +114,12 @@ body
 #folding-slot-controls .row,
 #slots .row
 {
-  background-color: var(--secondary-background-color);
+  background-color: var(--row-background-color);
 }
 
 .card
 {
-  background-color: var(--tertiary-background-color);
+  background-color: var(--card-color);
   border: none;
 }
 
@@ -120,7 +131,7 @@ h4 a,
 h5 a,
 h6 a
 {
-  border-color: var(--secondary-color) !important;
+  border-color: var(--row-color) !important;
 }
 
 #user-score
@@ -160,7 +171,7 @@ div.description-project,
 .btn-outline-primary,
 .btn-outline-info
 {
-  background-color: var(--tertiary-background-color);
+  background-color: var(--card-color);
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
@@ -192,7 +203,7 @@ div.description-project,
 .dropdown-item:hover
 {
   color: var(--accent-color) !important;
-  background-color: var(--tertiary-background-color) !important;
+  background-color: var(--card-color) !important;
 }
 
 .nav-pills .nav-link.active,
@@ -204,13 +215,13 @@ div.description-project,
 
 .nav-pills .nav-link
 {
-  background-color: var(--secondary-background-color);
+  background-color: var(--row-background-color);
   color: var(--accent-color) !important;
 }
 
 .nav-pills .nav-link:hover
 {
-  background-color: var(--tertiary-background-color);
+  background-color: var(--card-color);
 }
 
 .input-group-text,
@@ -230,7 +241,7 @@ hr
 .slot-holder,
 #center-console-screen
 {
-  background-color: var(--tertiary-background-color);
+  background-color: var(--card-color);
 }
 
 input[data-switch=info]:checked + label {
@@ -240,28 +251,28 @@ input[data-switch=info]:checked + label {
 .btn-outline-success:hover
 {
   background-color: #42d29d !important;
-  color: var(--accent-secondary-color) !important;
-  border-color: var(--accent-secondary-color) !important;
+  color: var(--button-highlight-color) !important;
+  border-color: var(--button-highlight-color) !important;
 }
 
 .btn-outline-warning:hover
 {
   background-color: #f9bc0d !important;
-  color: var(--accent-secondary-color) !important;
-  border-color: var(--accent-secondary-color) !important;
+  color: var(--button-highlight-color) !important;
+  border-color: var(--button-highlight-color) !important;
 }
 
 .btn-outline-danger:hover
 {
   background-color: #fa6767 !important;
-  color: var(--accent-secondary-color) !important;
-  border-color: var(--accent-secondary-color) !important;
+  color: var(--button-highlight-color) !important;
+  border-color: var(--button-highlight-color) !important;
 }
 
 .input-group select
 {
-  background-color: var(--tertiary-background-color);
-  color: var(--secondary-color);
+  background-color: var(--card-color);
+  color: var(--row-color);
 }
 
 .user-holder .card div,
@@ -269,15 +280,15 @@ input[data-switch=info]:checked + label {
 .project-details label,
 .description > *
 {
-  color: var(--secondary-color) !important;
+  color: var(--row-color) !important;
 }
 
 #slots .row .progress
 {
   height: 18px;
   margin-top: 5px;
-  border: 2px solid var(--secondary-color);
-  background-color: var(--tertiary-background-color) !important;
+  border: 2px solid var(--row-color);
+  background-color: var(--card-color) !important;
 }
 
 div.pu-type.description
@@ -293,42 +304,42 @@ div.pu-type.description
   background-position: 50% 50%;
   background-color: #f6a828 !important;
 
-  border-right: 2px solid var(--secondary-color);
+  border-right: 2px solid var(--row-color);
 }
 
 .jq-icon-success
 {
-  background-color: var(--tertiary-background-color);
-  color: var(--secondary-color);
-  border-color: var(--secondary-color);
+  background-color: var(--card-color);
+  color: var(--row-color);
+  border-color: var(--row-color);
 }
 
 .slot-status-tbl td
 {
-  border-color: var(--secondary-color) !important;
+  border-color: var(--row-color) !important;
 }
 
 .slot-status-tbl td:last-child
 {
-  border-right: 2px solid var(--secondary-color) !important;
+  border-right: 2px solid var(--row-color) !important;
 }
 
 .slot-status-tbl th,
 td
 {
-  border-color: var(--secondary-color);
+  border-color: var(--row-color);
 }
 
 canvas
 {
-  background-color: var(--tertiary-background-color);
+  background-color: var(--card-color);
 }
 
 /* Borders & Box Shadows */
 
 .dropdown-menu
 {
-  border: 3px solid var(--main-border-color);
+  border: 3px solid var(--card-border-color);
   border-radius: 0.6em !important;
 
   -moz-box-shadow: 0px 4px 8px var(--main-box-shadow);
@@ -355,13 +366,13 @@ canvas
 
 #center-console-screen-nav
 {
-  border: 3px solid var(--main-border-color);
+  border: 3px solid var(--card-border-color);
   border-radius: 0.6em !important;
 }
 
 #center-console-screen-nav li:not(:first-child)
 {
-  border-left: 3px solid var(--main-border-color);
+  border-left: 3px solid var(--card-border-color);
 }
 
 #center-console-screen-nav li a
@@ -402,7 +413,7 @@ canvas
 
 .primary-top-console-row > .row
 {
-  border: 3px solid var(--main-border-color);
+  border: 3px solid var(--card-border-color);
   border-radius: 0.6em;
 
   -moz-box-shadow: 0px 4px 8px var(--main-box-shadow);
@@ -427,7 +438,7 @@ canvas
 
 .console-screen-col
 {
-  border: 3px solid var(--main-border-color);
+  border: 3px solid var(--card-border-color);
   border-top: none;
   border-bottom: none;
 
@@ -444,7 +455,7 @@ canvas
 
 #folding-performance-and-controls .row
 {
-  border: 3px solid var(--main-border-color);
+  border: 3px solid var(--card-border-color);
   border-radius: 0.6em;
 
   -moz-box-shadow: 0px 4px 8px var(--main-box-shadow);
@@ -457,7 +468,7 @@ canvas
 
 #folding-slot-controls .row
 {
-  border: 3px solid var(--main-border-color);
+  border: 3px solid var(--card-border-color);
   border-radius: 0.6em;
 
   -moz-box-shadow: 0px 4px 8px var(--main-box-shadow);
@@ -470,10 +481,17 @@ canvas
 
 #slots .row
 {
-  border: 3px solid var(--main-border-color);
+  border: 3px solid var(--card-border-color);
   border-radius: 0.6em;
 
   -moz-box-shadow: 0px 4px 8px var(--main-box-shadow);
   -webkit-box-shadow: 0px 4px 8px var(--main-box-shadow);
   box-shadow: 0px 4px 8px var(--main-box-shadow);
+}
+
+#folding-performance-and-controls button,
+#folding-performance-and-controls label,
+#user-update-btn
+{
+  border-radius: 0.25em !important;
 }
