@@ -18,9 +18,18 @@
 
   --accent-color: #7f0024;
 
-  --button-highlight-color: #303031;
-
   --user-score-color: #fb6436;
+
+  --success-color: #46a95f;
+  --success-hover-color: #2c9345;
+
+  --warning-color: #e8b70c;
+  --warning-hover-color: #d7aa06;
+
+  --danger-color: #e03131;
+  --danger-hover-color: #ca2b2c;
+
+  --button-overlay-color: rgba(0, 0, 0, 0.25);
 }
 
 .form-control::-webkit-calendar-picker-indicator
@@ -226,29 +235,86 @@ hr
   background-color: var(--card-color);
 }
 
-input[data-switch=info]:checked + label {
-  background-color: #42d29d !important;
+#folding-performance-and-controls .btn
+{
+  background: linear-gradient(var(--button-overlay-color), var(--button-overlay-color)), #222 url(http://127.0.0.1:7396/images/template/button_bg.png) repeat-x 0px -9px;
+
+  border: 2px solid #303031 !important;
+
+  color: #ffffff !important;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.running,
+.green,
+.production-status .mdi-arrow-up,
+.slot-tbl-ppd-avg .mdi-arrow-up
+{
+  color: var(--success-color) !important;
+}
+
+.slot-holder.running
+{
+  border-left: var(--success-color) 12px solid;
+}
+
+.btn-outline-success,
+input[data-switch=info]:checked + label
+{
+  background-color: var(--success-color) !important;
 }
 
 .btn-outline-success:hover
 {
-  background-color: #42d29d !important;
-  color: var(--button-highlight-color) !important;
-  border-color: var(--button-highlight-color) !important;
+  background-color: var(--success-hover-color) !important;
+}
+
+.paused,
+.yellow
+{
+  color: var(--warning-color) !important;
+}
+
+.slot-holder.paused
+{
+  border-left: var(--warning-color) 12px solid;
+}
+
+.btn-outline-warning
+{
+  background-color: var(--warning-color) !important;
 }
 
 .btn-outline-warning:hover
 {
-  background-color: #f9bc0d !important;
-  color: var(--button-highlight-color) !important;
-  border-color: var(--button-highlight-color) !important;
+  background-color: var(--warning-hover-color) !important;
+}
+
+.finishing,
+.red
+{
+  color: var(--danger-color) !important;
+}
+
+.slot-holder.finishing
+{
+  border-left: var(--danger-color) 12px solid;
+}
+
+.production-status .mdi-arrow-down,
+.slot-tbl-ppd-avg .mdi-arrow-down
+{
+  color: var(--danger-color) !important;
+}
+
+.btn-outline-danger
+{
+  background-color: var(--danger-color) !important;
 }
 
 .btn-outline-danger:hover
 {
-  background-color: #fa6767 !important;
-  color: var(--button-highlight-color) !important;
-  border-color: var(--button-highlight-color) !important;
+  background-color: var(--danger-hover-color) !important;
 }
 
 .input-group select
