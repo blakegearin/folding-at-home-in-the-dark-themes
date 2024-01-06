@@ -13,8 +13,8 @@
   --row-background-color: #eff1f6;
   --row-color: black;
 
+  --card-background-color: white;
   --card-border-color: black;
-  --card-color: white;
 
   --accent-color: #8e0028;
 
@@ -78,7 +78,7 @@ footer
 
 .form-control
 {
-  background-color: var(--card-color);
+  background-color: var(--card-background-color);
   color: var(--row-color);
 }
 
@@ -105,7 +105,7 @@ footer
 
 .card
 {
-  background-color: var(--card-color);
+  background-color: var(--card-background-color);
   border: none;
 }
 
@@ -157,7 +157,7 @@ div.description-project,
 .btn-outline-primary,
 .btn-outline-info
 {
-  background-color: var(--card-color);
+  background-color: var(--card-background-color);
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
@@ -189,7 +189,7 @@ div.description-project,
 .dropdown-item:hover
 {
   color: var(--accent-color) !important;
-  background-color: var(--card-color) !important;
+  background-color: var(--card-background-color) !important;
 }
 
 .nav-pills .nav-link.active,
@@ -207,7 +207,7 @@ div.description-project,
 
 .nav-pills .nav-link:hover
 {
-  background-color: var(--card-color);
+  background-color: var(--card-background-color);
 }
 
 .input-group-text,
@@ -227,7 +227,7 @@ hr
 .slot-holder,
 #center-console-screen
 {
-  background-color: var(--card-color);
+  background-color: var(--card-background-color);
 }
 
 #folding-performance-and-controls .btn
@@ -240,7 +240,7 @@ hr
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
 }
 
-.running, 
+.running,
 .green,
 .production-status .mdi-arrow-up,
 .slot-tbl-ppd-avg .mdi-arrow-up
@@ -314,7 +314,7 @@ input[data-switch=info]:checked + label
 
 .input-group select
 {
-  background-color: var(--card-color);
+  background-color: var(--card-background-color);
   color: var(--row-color);
 }
 
@@ -331,7 +331,7 @@ input[data-switch=info]:checked + label
   height: 18px;
   margin-top: 5px;
   border: 2px solid var(--row-color);
-  background-color: var(--card-color) !important;
+  background-color: var(--card-background-color) !important;
 }
 
 div.pu-type.description
@@ -352,7 +352,7 @@ div.pu-type.description
 
 .jq-icon-success
 {
-  background-color: var(--card-color);
+  background-color: var(--card-background-color);
   color: var(--row-color);
   border-color: var(--row-color);
 }
@@ -375,7 +375,7 @@ td
 
 canvas
 {
-  background-color: var(--card-color);
+  background-color: var(--card-background-color);
 }
 
 /* Borders & Box Shadows */

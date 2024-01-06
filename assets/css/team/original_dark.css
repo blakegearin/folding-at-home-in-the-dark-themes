@@ -13,8 +13,8 @@
   --row-background-color: #151515;
   --row-color: #c4c4c4;
 
+  --card-background-color: black;
   --card-border-color: black;
-  --card-color: black;
 
   --accent-color: #7f0024;
 
@@ -83,7 +83,7 @@ footer
 
 .form-control
 {
-  background-color: var(--card-color);
+  background-color: var(--card-background-color);
   color: var(--row-color);
 }
 
@@ -110,7 +110,7 @@ footer
 
 .card
 {
-  background-color: var(--card-color);
+  background-color: var(--card-background-color);
   border: none;
 }
 
@@ -162,7 +162,7 @@ div.description-project,
 .btn-outline-primary,
 .btn-outline-info
 {
-  background-color: var(--card-color);
+  background-color: var(--card-background-color);
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
@@ -194,7 +194,7 @@ div.description-project,
 .dropdown-item:hover
 {
   color: var(--accent-color) !important;
-  background-color: var(--card-color) !important;
+  background-color: var(--card-background-color) !important;
 }
 
 .nav-pills .nav-link.active,
@@ -212,7 +212,7 @@ div.description-project,
 
 .nav-pills .nav-link:hover
 {
-  background-color: var(--card-color);
+  background-color: var(--card-background-color);
 }
 
 .input-group-text,
@@ -232,7 +232,7 @@ hr
 .slot-holder,
 #center-console-screen
 {
-  background-color: var(--card-color);
+  background-color: var(--card-background-color);
 }
 
 #folding-performance-and-controls .btn
@@ -319,7 +319,7 @@ input[data-switch=info]:checked + label
 
 .input-group select
 {
-  background-color: var(--card-color);
+  background-color: var(--card-background-color);
   color: var(--row-color);
 }
 
@@ -336,7 +336,7 @@ input[data-switch=info]:checked + label
   height: 18px;
   margin-top: 5px;
   border: 2px solid var(--row-color);
-  background-color: var(--card-color) !important;
+  background-color: var(--card-background-color) !important;
 }
 
 div.pu-type.description
@@ -357,7 +357,7 @@ div.pu-type.description
 
 .jq-icon-success
 {
-  background-color: var(--card-color);
+  background-color: var(--card-background-color);
   color: var(--row-color);
   border-color: var(--row-color);
 }
@@ -380,7 +380,7 @@ td
 
 canvas
 {
-  background-color: var(--card-color);
+  background-color: var(--card-background-color);
 }
 
 /* Borders & Box Shadows */
