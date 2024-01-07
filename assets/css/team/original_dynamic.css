@@ -87,6 +87,11 @@ footer
   color: var(--row-color);
 }
 
+.topnav
+{
+  padding-bottom: 0.75rem !important;
+}
+
 .navbar-custom,
 .topnav.shadow-sm
 {
@@ -188,7 +193,8 @@ div.description-project,
 .slot-performance-holder span,
 .slot-status-tbl td,
 .slot-eta-big,
-#pannel-settings-display span
+#pannel-settings-display span,
+.timeline-item a.text-info
 {
   color: var(--accent-color) !important;
 }
@@ -214,7 +220,7 @@ div.description-project,
   background-color: var(--accent-color);
 }
 
-.timeline-item .text-info
+.timeline-item .text-info:not(a)
 {
   color: var(--main-color) !important;
 }
@@ -493,7 +499,13 @@ canvas
   border: none;
 }
 
-.primary-top-console-row > .row
+#folding-performance-and-controls,
+#primary-top-console-row
+{
+  padding-top: 0px !important;
+}
+
+#primary-top-console-row > .row
 {
   border: 3px solid var(--card-border-color);
   border-radius: 0.6em;
@@ -502,12 +514,12 @@ canvas
   -webkit-box-shadow: 0px 4px 8px var(--main-box-shadow);
   box-shadow: 0px 4px 8px var(--main-box-shadow);
 
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 #slots .row
 {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .user-holder
@@ -544,7 +556,8 @@ canvas
   -webkit-box-shadow: 0px 4px 8px var(--main-box-shadow);
   box-shadow: 0px 4px 8px var(--main-box-shadow);
 
-  margin-bottom: 27px;
+  margin-bottom: 25px;
+  padding-top: 0px !important;
   padding-bottom: 7px;
 }
 
@@ -557,7 +570,7 @@ canvas
   -webkit-box-shadow: 0px 4px 8px var(--main-box-shadow);
   box-shadow: 0px 4px 8px var(--main-box-shadow);
 
-  margin-bottom: 27px;
+  margin-bottom: 25px;
   padding-bottom: 10px;
 }
 
